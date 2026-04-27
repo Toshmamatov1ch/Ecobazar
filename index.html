@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecobazar</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="img/svg" href="./imgs/logo.svg" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top-wrap">
+        <div class="container">
+          <div class="navtop">
+            <img src="./imgs/location.svg" alt="location" />
+            <img src="./imgs/sign.svg" alt="sign in and sign up" />
+          </div>
+        </div>
+      </div>
+
+      <div class="header-middle-wrap">
+        <div class="container">
+          <div class="navmiddle">
+            <img src="./imgs/sitelogo.svg" alt="site logo" />
+            <div class="search-container">
+              <img src="./imgs/lupa.svg" alt="lupa" />
+
+              <input type="text" placeholder="Search" />
+
+              <button class="search-btn">Search</button>
+            </div>
+            <img src="./imgs/shoping.svg" alt="shoping" />
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="header-nav-wrap">
+          <div class="container navbottom">
+            <div class="links">
+              <a href="#">Home<i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#">Shop<i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#">Blog<i class="fa-solid fa-chevron-down"></i></a>
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+            </div>
+            <img src="./imgs/call.svg" alt="call phone" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container herowrap">
+          <div class="content">
+            <p>Best Deals</p>
+            <h1>Sale of the Month</h1>
+            <img src="./imgs/times.svg" alt="times" />
+            <button class="hero-btn">
+              Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container productwrap">
+          <div class="cardproduct">
+            <div class="cardimg">
+              <img src="./imgs/qalmpir.svg" alt="qalmpir" />
+            </div>
+            <div class="cardproduct-bottom">
+              <div class="card-content">
+                <p>Red Chili</p>
+                <h2>$14.99</h2>
+                <img src="./imgs/stars.svg" alt="stars" />
+              </div>
+              <button id="add-to-cart-btn" class="cart-button">
+                <img src="./imgs/bag.svg" alt="savat" />
+              </button>
+            </div>
+          </div>
+          <div class="cardproduct">
+            <img src="./imgs/kartoshka.svg" alt="kartoshka" />
+            <div class="cardproduct-bottom">
+              <div class="card-content">
+                <p>Red Chili</p>
+                <h2>$14.99</h2>
+                <img src="./imgs/stars.svg" alt="stars" />
+              </div>
+              <button id="add-to-cart-btn" class="cart-button">
+                <img src="./imgs/bag.svg" alt="savat" />
+              </button>
+            </div>
+          </div>
+          <div class="cardproduct">
+            <div class="cardimg">
+              <img src="./imgs/karam.svg" alt="karam" />
+              <div class="cardimgin">
+                <button>
+                  <img src="./imgs/yurakcha.svg" alt="yurakcha" />
+                </button>
+                <button id="cardimg-btn">
+                  <img
+                    src="./imgs/kuz.svg"
+                    alt="ko'z rasmi
+                "
+                    id="openModalBtn"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="cardproduct-bottom">
+              <div class="card-content">
+                <p>Red Chili</p>
+                <h2>$14.99</h2>
+                <img src="./imgs/stars.svg" alt="stars" />
+              </div>
+              <button id="add-to-cart-btn" class="cart-button">
+                <img src="./imgs/bag.svg" alt="savat" />
+              </button>
+            </div>
+          </div>
+          <div class="cardproduct">
+            <img src="./imgs/makka.svg" alt="makka" />
+            <div class="cardproduct-bottom">
+              <div class="card-content">
+                <p>Red Chili</p>
+                <h2>$14.99</h2>
+                <img src="./imgs/stars.svg" alt="stars" />
+              </div>
+              <button id="add-to-cart-btn" class="cart-button">
+                <img src="./imgs/bag.svg" alt="savat" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="modal hidden" id="modalOverlay">
+        <div class="modalwrap">
+          <div class="close-modal" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="modal-left">
+            <div class="left-imgs">
+              <img src="./imgs/Screenshot_1.png" alt="karam1" class="thumb" />
+              <img src="./imgs/karam2.svg" alt="karam2" class="thumb" />
+              <img src="./imgs/karam3.svg" alt="karam3" class="thumb" />
+              <img src="./imgs/karam4.svg" alt="karam4" class="thumb" />
+            </div>
+            <img
+              src="./imgs/karam5.svg"
+              alt="karam5"
+              class="product"
+              id="mainImg"
+            />
+          </div>
+          <div class="modal-content">
+            <div class="modal-top">
+              <div class="modal-title">
+                <h1>Chinese Cabbage</h1>
+                <button class="title-btn">In Stock</button>
+              </div>
+              <div class="modal-imgs">
+                <img src="./imgs/ska.svg" alt="ska" />
+                <img src="./imgs/narx.svg" alt="narx" />
+              </div>
+            </div>
+            <div class="modal-middle">
+              <div class="middle-top">
+                <div class="left-top">
+                  <p>Brand:</p>
+                  <img src="./imgs/farm.svg" alt="farm" />
+                </div>
+                <div class="right-top">
+                  <p>Share item:</p>
+                  <div class="detalis">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
+                consequat nec, ultrices et ipsum. Nulla varius magna a consequat
+                pulvinar.
+              </p>
+            </div>
+            <div class="modal-middle-second">
+              <div class="second-top">
+                <div class="counter">
+                  <button class="counter-btn-minus" id="minus">
+                    <img src="./imgs/minus.svg" alt="minus" /></button
+                  ><span id="number">0</span
+                  ><button class="counter-btn-plus" id="plus">
+                    <img src="./imgs/plus.svg" alt="plus" />
+                  </button>
+                </div>
+                <button class="second-btn" id="addToCartBtn">
+                  Add to Cart <img src="./imgs/bag.svg" alt="shoping" />
+                </button>
+                <img src="./imgs/button.svg" alt="button'" />
+              </div>
+            </div>
+            <div class="modal-botom">
+              <p>Category: <span>Vegetables</span></p>
+              <p>
+                Tag: Vegetables Healthy <span>Chinese</span> Cabbage Green
+                Cabbage
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="toast" class="toast-message">Korzinkaga saqlandi</div>
+    </main>
+    <footer></footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

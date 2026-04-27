@@ -1,0 +1,596 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v24-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v24-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/poppins-v24-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v24-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Root bu kerekli narsalarni saqlash */
+
+:root {
+  --priymary-bg-color: rgba(255, 255, 255, 1);
+  --primary-btn-color: rgba(0, 178, 7, 1);
+  --primary-title-color: rgba(26, 26, 26, 1);
+  --primary-text-color: rgba(128, 128, 128, 1);
+}
+
+/*   * bu universal selector */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+/* body uchun berilgan styles */
+
+body {
+  font-family: "Poppins";
+  background-color: var(--priymary-bg-color);
+}
+
+/* Container bu  */
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header qismi styeles */
+
+/* header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+} */
+
+.header-top-wrap {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  /* backdrop-filter: blur(20px); */
+}
+
+/* .header-middle-wrap {
+  backdrop-filter: blur(20px);
+}  */
+
+/* Navbarni tepa qismi */
+
+.navtop {
+  padding: 13px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .navtop img {
+  filter: brightness(0) invert(1);
+} */
+
+/* Navabrni o'rta qismi  */
+
+.navmiddle {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbrni paski qismi */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 498px;
+}
+
+.search-container img {
+  padding: 0px 8px 0px 16px;
+}
+
+.search-container input {
+  padding: 12px 0;
+  flex: 1;
+}
+
+.search-container input::placeholder {
+  color: rgba(128, 128, 128, 1);
+}
+
+.search-btn {
+  background-color: var(--primary-btn-color);
+  color: var(--priymary-bg-color);
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #008a05;
+}
+
+/* Navbarni pastki qismi uchun */
+
+.navbottom {
+  padding: 19.5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav-wrap {
+  width: 100%;
+  background-color: #1a1a1a;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  a {
+    color: rgba(153, 153, 153, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.links a:hover {
+  color: var(--priymary-bg-color);
+}
+
+/* Hero section styles */
+
+.hero {
+  padding: 72px 0;
+}
+
+.herowrap {
+  border-radius: 8px;
+  background-image: url("../imgs/bg.jpg");
+  transform: scaleX(-1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  transform: scaleX(-1);
+  padding: 68px 0 92px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    color: var(--priymary-bg-color);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    color: var(--priymary-bg-color);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 32px;
+  border-radius: 43px;
+  background-color: var(--primary-btn-color);
+  color: var(--priymary-bg-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: justify;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #008a05;
+}
+
+/* Section product */
+
+.products {
+  padding: 72px 0;
+}
+
+.productwrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.cardproduct {
+  width: 312px;
+  height: 407px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 10px;
+}
+
+.cardproduct:hover {
+  border-color: #00b207;
+  box-shadow: 0px 4px 20px rgba(0, 178, 7, 0.1);
+}
+
+.cardimg {
+  position: relative;
+}
+
+.cardimgin {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  button {
+    background: none;
+  }
+}
+
+.cardproduct-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+.card-content {
+  p {
+    color: rgba(77, 77, 77, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  h2 {
+    color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 6px;
+  }
+}
+
+.cart-button {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cart-button:hover {
+  background: #008a05;
+}
+
+.cart-button img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.cart-button img:hover {
+  filter: brightness(0) invert(1);
+}
+
+.cart-button.added {
+  background-color: var(--primary-btn-color);
+  border-radius: 50%;
+}
+
+.cart-button.added img {
+  filter: brightness(0) invert(1);
+  transform: translateY(-2px);
+}
+
+/* Modal styles */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalwrap {
+  width: 100%;
+  max-width: 1320px;
+  height: 636px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  gap: 24px;
+}
+
+.close-modal {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  right: 10px;
+  top: -50px;
+}
+
+.modal-left {
+  display: flex;
+  gap: 12px;
+}
+
+.product {
+  width: 648px;
+}
+
+.left-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.left-imgs img:nth-child(1) {
+  width: 80px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.modal-top {
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  padding: 40px 40px 20px 0;
+}
+
+.modal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.title-btn {
+  background-color: rgba(32, 181, 38, 0.2);
+  padding: 4px 8px;
+  color: rgba(44, 116, 47, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.modal-middle {
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  padding: 24px 40px 24px 0;
+}
+.middle-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.left-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  p {
+    color: var(--primary-title-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+.right-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    color: var(--primary-title-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+.detalis {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(77, 77, 77, 1);
+  font-size: 18px;
+}
+
+.second-top {
+  border-bottom: 1px solid rgba(230, 230, 230, 1);
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 170px;
+  padding: 8px;
+
+  img {
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  span {
+    color: var(--primary-title-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    background: none;
+  }
+}
+.second-btn {
+  padding: 16px 90px;
+  border-radius: 43px;
+  background-color: rgba(0, 178, 7, 1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+
+  img {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.modal-botom {
+  padding: 24px 0 95px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.toast-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* Yashil rang */
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 10000;
+  animation: fadeIn 0.5s;
+}
+
+/* Animatsiya (paydo bo'lish effekti) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
